@@ -26,10 +26,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ezhu111/assignment-1-todolist.git"
+    "url": "git+https://github.com/ezhu111/luscious-lists-app.git"
   },
   "bugs": {
-    "url": "https://github.com/ezhu111/assignment-1-todolist/issues"
+    "url": "https://github.com/ezhu111/luscious-lists-app/issues"
   },
-  "homepage": "https://github.com/ezhu111/assignment-1-todolist#readme"
+  "homepage": "https://github.com/ezhu111/luscious-lists-app#readme"
 }
