@@ -1,0 +1,34 @@
+@use 'reboot';
+@use 'page-header';
+@use 'todolist';
+@use 'footer';
+@use 'homepage';
+@use 'notfound';
+
+#app {
+    position: relative;
+    background-color: rgb(235, 235, 235);
+    margin: 0 auto;
+    max-width: 1300px;
+
+    > div {
+        display: flex;
+        min-height: 100vh;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+}
+
+input {
+    border: none;
+    width: 100%;
+}
+
+i:not(.logo):hover{
+    cursor: pointer;
+}
+
+.homepage .logo {
+    color: white;
+    font-size: 5rem;
+}

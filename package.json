@@ -1,0 +1,35 @@
+{
+  "name": "luscious-lists-app",
+  "version": "1.0.0",
+  "description": "A web application for a todo list",
+  "default": "src/index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npm run static && npx parcel src/index.html",
+    "static": "npx gulp",
+    "build": "npx gulp && npx parcel build src/index.html",
+    "clean:dev": "rmdir /s .parcel-cache dist",
+    "clean:git": "rmdir /s .parcel-cache dist  node_modules"
+  },
+  "author": "Edmond Zhu",
+  "license": "ISC",
+  "devDependencies": {
+    "@parcel/transformer-image": "^2.0.0-rc.0",
+    "@parcel/transformer-sass": "^2.0.0",
+    "gulp": "^4.0.2",
+    "http-server": "^13.0.2",
+    "parcel": "^2.0.0",
+    "sass": "^1.43.2"
+  },
+  "dependencies": {
+    "uuid": "^3.4.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ezhu111/assignment-1-todolist.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ezhu111/assignment-1-todolist/issues"
+  },
+  "homepage": "https://github.com/ezhu111/assignment-1-todolist#readme"
+}

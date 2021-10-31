@@ -1,0 +1,108 @@
+@import 'variables';
+
+// this is the todos page
+
+.todo-page .logo {
+    color: white;
+    font-size: 3rem;
+}
+
+.ui-page-todo{
+    margin: 0 auto;
+    padding: 0 1rem;
+
+    //This targets a single todo item
+    .todoSingle {
+        border-radius: 0.3rem;
+        background-color: white;
+        margin: 1rem 0;
+        display: flex;
+        overflow: hidden;
+        box-shadow: 0px 0 2px 2px rgba(0, 0, 0, 0.288);
+
+        .todo-color {
+            width: 10%;
+            max-width: 40px;
+        }
+
+        .todo-content{
+            padding-left: 3%;
+            padding-top: 0.2em;
+            padding-bottom: 0.2rem;
+
+            input {
+                width: 75%;
+            }
+
+            .todo-title {
+                font-size: 1.5rem;
+                font-weight: 600;
+                font-style: italic;
+            }
+    
+            .todo-category{
+                font-weight: 600;
+                font-style: italic;
+            }
+    
+            .todo-category,
+            .todo-date{
+                font-size: 0.9rem;
+                color: grey;
+            }
+    
+            .todo-completed {
+                font-size: 0.8rem;
+                color: red;
+            }
+        }
+
+        .todo-btn{
+            margin: auto;
+
+            .btn{
+                margin: auto;
+                background-color: white;
+                border: none;
+                margin: 0.5rem 0;
+
+                i {
+                    width: 25px;
+                    font-size: 1.5rem;
+                }
+                
+                :hover{
+                    color: $base-orange;
+                }
+            }
+        }
+    }
+
+    //this will alternate the todo-color
+    .todoSingle:nth-child(4n+1) .todo-color{
+        background-color: rgb(253, 174, 70);
+    }
+    .todoSingle:nth-child(4n+2) .todo-color{
+        background-color: rgb(145, 223, 56);
+    }
+    .todoSingle:nth-child(4n+3) .todo-color{
+        background-color: rgb(224, 92, 169);
+    }
+    .todoSingle:nth-child(4n+4) .todo-color{
+        background-color: rgb(90, 82, 197);
+    }
+
+}
+
+//side by side when width 1300px
+@media only screen and (min-width: 1300px){
+    .ui-page-todo {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        .todoSingle {
+            width: 49%;
+        }
+    }
+}

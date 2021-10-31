@@ -1,0 +1,47 @@
+[
+    {
+        "category": "Home",
+        "title": "Eat chips",
+        "isComplete": true,
+        "startDate": "Saturday October 16th",
+        "startTime": "3:00pm",
+        "endDate": "Saturday October 16th",
+        "endTime": "4:00pm"
+    },
+    {
+        "category": "School",
+        "title": "Study",
+        "isComplete": false,
+        "startDate": "Sunday October 17th",
+        "startTime": "7:00pm",
+        "endDate": "Sunday October 17th",
+        "endTime": "9:00pm"
+    },
+    {
+        "category": "Health",
+        "title": "Don't eat chips",
+        "isComplete": false,
+        "startDate": "Sunday October 17th",
+        "startTime": "12:00am",
+        "endDate": "Sunday October 24th",
+        "endTime": "12:00am"
+    },
+    {
+        "category": "Friends",
+        "title": "Meet with Bob",
+        "isComplete": false,
+        "startDate": "Wednesday October 20th",
+        "startTime": "1:00pm",
+        "endDate": "Wednesday October 20th",
+        "endTime": "3:00pm"
+    },
+    {
+        "category": "Work",
+        "title": "Finish assignment",
+        "isComplete": false,
+        "startDate": "Monday October 4th",
+        "startTime": "12:00am",
+        "endDate": "Friday October 22th",
+        "endTime": "12:00am"
+    }
+]

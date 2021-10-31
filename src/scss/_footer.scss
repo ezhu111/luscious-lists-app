@@ -1,0 +1,26 @@
+
+// this is the footer for the add button on the todos page
+
+footer {
+    padding: 0.5rem;
+    width: 100%;
+    background-color: rgb(255, 102, 0);
+    display: flex;
+
+    button {
+        border: 1px solid black;
+        margin: auto;
+        background-color: white;
+        border-radius: 100%;
+        overflow: hidden;
+
+        i {
+            color: rgb(255, 102, 0);
+            font-size: 4rem;
+        }
+
+        :hover{
+            color: rgb(107, 43, 0);
+        }
+    }
+}
