@@ -4,7 +4,8 @@ import notfound from "../pages/notfound.js";
 
 const routes = {
     "/": home,
-    "/todos": todos
+    "/todos": todos,
+    "/*": notfound,
 }
 
 const Router =  function (pathname, params=null)   {
