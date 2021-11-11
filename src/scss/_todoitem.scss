@@ -1,0 +1,61 @@
+@import 'variables';
+
+//This targets a single todo item
+.todoSingle {
+    border-radius: 0.3rem;
+    background-color: white;
+    margin: 1rem 0;
+    display: flex;
+    overflow: hidden;
+    box-shadow: 0px 0 2px 2px rgba(0, 0, 0, 0.288);
+    .todo-color {
+        width: 10%;
+        max-width: 40px;
+    }
+    .todo-content{
+        padding-left: 3%;
+        padding-top: 0.2em;
+        padding-bottom: 0.2rem;
+        input {
+            width: 75%;
+        }
+        .todo-title {
+            font-size: 1.5rem;
+            font-weight: 600;
+            font-style: italic;
+        }
+
+        .todo-category{
+            font-weight: 600;
+            font-style: italic;
+        }
+
+        .todo-category,
+        .todo-date{
+            font-size: 0.9rem;
+            color: grey;
+        }
+
+        .todo-completed {
+            font-size: 0.8rem;
+            color: red;
+        }
+    }
+    .todo-btn{
+        margin: auto;
+        .btn{
+            margin: auto;
+            background-color: white;
+            border: none;
+            margin: 0.5rem 0;
+            i {
+                width: 25px;
+                font-size: 1.5rem;
+            }
+            
+            :hover{
+                color: $base-orange;
+            }
+        }
+    }
+}

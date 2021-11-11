@@ -1,0 +1,67 @@
+@import 'variables';
+
+#app > .delete-page{
+    display:flex;
+    justify-content: flex-start;
+
+    .ui-page-header {
+        margin-bottom: 10rem;
+    }
+
+    > div {
+        margin: 0 auto;
+
+        h2 {
+            font-family: 'Press Start 2P', cursive;
+            font-size: 2rem;
+            color: red;
+        }
+
+        .todoSingle {
+            margin: 2rem auto;
+            text-align: center;
+            
+            input{
+                display: block;
+                width: 100%;
+            }
+        }
+
+        // this targets the cancel and delete buttons
+        > div {
+            display: flex;
+            justify-content: space-around;
+
+            button {
+                font-weight: bold;
+                width: 8rem;
+                background-color: white;
+                border-radius: 0.5rem;
+                padding: 0.7rem;
+
+                &:hover{
+                    cursor: pointer;
+                }
+
+                &.deleteButton {
+                    border: 0.15rem solid rgb(138, 50, 50);
+                    background-color: rgb(231, 81, 81);
+                    color: white;
+
+                    &:hover{
+                        background-color: rgb(201, 55, 55);
+                    }
+                }
+
+                &.cancelButton {
+                    border: 0.15rem solid black;
+                    background-color: white;
+
+                    &:hover{
+                        background-color: $base-orange;
+                    }
+                }
+            }
+        }
+    }
+}

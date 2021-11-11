@@ -4,6 +4,8 @@
 @use 'footer';
 @use 'homepage';
 @use 'notfound';
+@use 'delete';
+@use 'todoitem';
 
 #app {
     position: relative;

@@ -11,9 +11,9 @@ const todoitem = function({id, title, category, isComplete, endDate}){
                 <input type="text" class="todo-date" value="Due on ${endDate}" readonly></input>
                 <input type="text" class="todo-completed" value="Completed: ${isComplete}" readonly></input>
             </div>
-            <div class="todo-btn">
-                <button class="btn"><i class="fas fa-edit"></i></i></button>
-                <button class="btn"><i class="fas fa-trash-alt"></i></button>
+            <div class="todo-btn" data-key="${id}">
+                <button class="btn" data-key="${id}"><i class="fas fa-edit"></i></i></button>
+                <button id="deleteTodo" class="btn" data-key="${id}"><i class="fas fa-trash-alt"></i></button>
             </div>
         </ul>
     `;

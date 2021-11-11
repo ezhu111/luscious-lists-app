@@ -1,11 +1,13 @@
 import home from "../pages/home.js";
 import todos from "../pages/todos.js";
 import notfound from "../pages/notfound.js";
+import deletePage from "../pages/crud/delete.js";
 
 const routes = {
     "/": home,
     "/todos": todos,
-    "/*": notfound,
+    "/delete": deletePage,
+    "/*": notfound
 }
 
 const Router =  function (pathname, params=null)   {

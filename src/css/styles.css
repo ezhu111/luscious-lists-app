@@ -430,10 +430,6 @@ table th {
   font-size: 3rem;
 }
 
-.todo-page {
-  background-color: #ebebeb;
-}
-
 .ui-page-todo {
   margin: 0 auto;
   padding: 0 1rem;
@@ -571,7 +567,7 @@ footer button :hover {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  border: 5px solid #ff6600;
+  border: 5px solid #ce5200;
   color: #ff6600;
   border-radius: 1rem;
   margin: 0 auto;
@@ -641,6 +637,12 @@ footer button :hover {
   text-decoration: none;
 }
 
+.delete-page {
+  font-family: "Press Start 2P", cursive;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
 #app {
   position: relative;
   background-color: #ebebeb;

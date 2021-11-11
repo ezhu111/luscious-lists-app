@@ -3,8 +3,16 @@ import { getStore } from "../redux/store"
 import todoItem from "../components/cards/todoitem.js"
 import addToDo from "../components/cards/addToDo"
 import todolist from "../components/cards/todolist"
+import { Router } from "../routes/router"
 
 const toDoPage = function(){
+
+    function onDeleteTodo (e){
+        const todoId = e.currentTarget.dataset.key
+        const todoItem = getStore().filter((todo) => todo.id === todoId)
+        Router('/delete', todoItem[0])
+    }
+
     const todoList = getStore()
 
     //create a div to hold all the content inside
@@ -22,8 +30,8 @@ const toDoPage = function(){
         if(todoList !== null){
             const elements = todoList.map(todo => todoItem(todo))
             elements.forEach(element=> {
+                element.querySelector('#deleteTodo').addEventListener('click', onDeleteTodo)
                 ul.append(element)
-                //element.querySelector('#deleteTodo').addEventListener('click', onDeleteTodo)
             });
 
             page.append(ul)
