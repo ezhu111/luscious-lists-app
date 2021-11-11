@@ -3,10 +3,10 @@
         "category": "Home",
         "title": "Eat chips",
         "isComplete": true,
-        "startDate": "Saturday October 16th",
-        "startTime": "3:00pm",
-        "endDate": "Saturday October 16th",
-        "endTime": "4:00pm"
+        "startDate": "2021-10-16",
+        "startTime": "15:00",
+        "endDate": "2021-10-16",
+        "endTime": "16:00"
     },
     {
         "category": "School",
