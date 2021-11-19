@@ -6,7 +6,7 @@ import button from "../../components/ui/button"
 import reducer from "../../redux/reducers"
 
 const cancelButton = button("cancelButton", "Cancel")
-const deleteButton = button("deleteButton", "Delete")
+const editButton = button("editButton", "Confirm")
 
 const editPage = function (props) {
     console.log(props);
@@ -17,11 +17,11 @@ const editPage = function (props) {
         Router('/todos')
     }
     else {
-        function onCancelDelete(e) {
+        function onCancel(e) {
             Router('/todos')
         }
 
-        function onRemoveTodo(e) {
+        function onConfirm(e) {
             if (confirm('Are you sure you want to delete this item?')) {
                 Router('/todo')
                 const removeTodo = props
@@ -40,7 +40,7 @@ const editPage = function (props) {
 
         //create a div to hold all the content inside
         var page = document.createElement('div')
-        page.classList.add("delete-page")
+        page.classList.add("edit-page")
 
         //create the heading from components
         const header = branding();
@@ -85,10 +85,10 @@ const editPage = function (props) {
         `
 
         const content = makeElement(template)
-        cancelButton.addEventListener('click', onCancelDelete)
-        deleteButton.addEventListener('click', onRemoveTodo)
+        cancelButton.addEventListener('click', onCancel)
+        editButton.addEventListener('click', onConfirm)
         const buttonDiv = document.createElement('div')
-        buttonDiv.append(cancelButton, deleteButton)
+        buttonDiv.append(cancelButton, editButton)
         content.append(buttonDiv)
         page.append(content)
 

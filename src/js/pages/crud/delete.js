@@ -15,11 +15,11 @@ const deletePage = function (props) {
         Router('/todos')
     }
     else {
-        function onCancelDelete(e) {
+        function onCancel(e) {
             Router('/todos')
         }
 
-        function onRemoveTodo(e) {
+        function onConfirm(e) {
             if (confirm('Are you sure you want to delete this item?')) {
                 Router('/todo')
                 const removeTodo = props
@@ -59,8 +59,8 @@ const deletePage = function (props) {
         `
 
         const content = makeElement(template)
-        cancelButton.addEventListener('click', onCancelDelete)
-        deleteButton.addEventListener('click', onRemoveTodo)
+        cancelButton.addEventListener('click', onCancel)
+        deleteButton.addEventListener('click', onConfirm)
         const buttonDiv = document.createElement('div')
         buttonDiv.append(cancelButton, deleteButton)
         content.append(buttonDiv)
