@@ -9,19 +9,25 @@ const cancelButton = button("cancelButton", "Cancel")
 const deleteButton = button("deleteButton", "Delete")
 
 const deletePage = function (props) {
+    function cleanUp (){
+        cancelButton.removeEventListener('click', onCancel)  
+        deleteButton.removeEventListener('click', onConfirm) 
+    }
 
     // redirect back to todos page if there is no data
     if (props == null) {
+        cleanUp()
         Router('/todos')
     }
     else {
         function onCancel(e) {
+            cleanUp()
             Router('/todos')
         }
 
         function onConfirm(e) {
             if (confirm('Are you sure you want to delete this item?')) {
-                Router('/todo')
+                Router('/todos')
                 const removeTodo = props
                 const index = getStore().findIndex(todo => todo.id === removeTodo.id)
                 const action = {
@@ -29,11 +35,9 @@ const deletePage = function (props) {
                     payload: { index },
                     cb: () => Router('/todos')
                 }
-
                 reducer(action)
+                cleanUp()
             }
-
-            e.preventDefault();
         }
 
         //create a div to hold all the content inside

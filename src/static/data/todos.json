@@ -1,5 +1,6 @@
 [
     {
+        "id": null,
         "category": "Home",
         "title": "Eat chips",
         "isComplete": true,
@@ -9,39 +10,43 @@
         "endTime": "16:00"
     },
     {
+        "id": null,
         "category": "School",
         "title": "Study",
         "isComplete": false,
-        "startDate": "Sunday October 17th",
-        "startTime": "7:00pm",
-        "endDate": "Sunday October 17th",
-        "endTime": "9:00pm"
+        "startDate": "2021-10-17",
+        "startTime": "19:00",
+        "endDate": "2021-10-17",
+        "endTime": "21:00"
     },
     {
+        "id": null,
         "category": "Health",
         "title": "Don't eat chips",
         "isComplete": false,
-        "startDate": "Sunday October 17th",
-        "startTime": "12:00am",
-        "endDate": "Sunday October 24th",
-        "endTime": "12:00am"
+        "startDate": "2021-10-17",
+        "startTime": "00:00",
+        "endDate": "2021-10-24",
+        "endTime": "00:00"
     },
     {
+        "id": null,
         "category": "Friends",
         "title": "Meet with Bob",
         "isComplete": false,
-        "startDate": "Wednesday October 20th",
-        "startTime": "1:00pm",
-        "endDate": "Wednesday October 20th",
-        "endTime": "3:00pm"
+        "startDate": "2021-10-20",
+        "startTime": "13:00",
+        "endDate": "2021-10-20",
+        "endTime": "15:00"
     },
     {
+        "id": null,
         "category": "Work",
         "title": "Finish assignment",
         "isComplete": false,
-        "startDate": "Monday October 4th",
-        "startTime": "12:00am",
-        "endDate": "Friday October 22th",
-        "endTime": "12:00am"
+        "startDate": "2021-10-4",
+        "startTime": "00:00",
+        "endDate": "2021-10-22",
+        "endTime": "00:00"
     }
 ]

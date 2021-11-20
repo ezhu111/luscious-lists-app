@@ -3,7 +3,7 @@ import makeElement from "../../utils/makeElement.js"
 const addToDo = function () {
     let footerTemplate = `
     <footer class="ui-page-footer">
-        <button class="addToDo">
+        <button id="addTodo" class="addToDo">
             <i class="fas fa-plus"></i>
         </button>
     </footer>

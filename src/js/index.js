@@ -10,7 +10,7 @@ const app = document.querySelector('#app')
 const onAppInit = async function(e){
     let todos = await dataFetcher('./data/todos.json')
 
-    if(todos[0].id === undefined){
+    if(todos[0].id === undefined || todos[0].id === null){
         todos = [...keyGenerator(todos)]
     }
 

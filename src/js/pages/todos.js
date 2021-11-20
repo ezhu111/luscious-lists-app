@@ -7,16 +7,31 @@ import { Router } from "../routes/router"
 
 const toDoPage = function(){
 
+    function cleanUp (){
+        const todos = document.querySelectorAll('ul') 
+        todos.forEach((todo)=>{
+            todo.removeEventListener('click', onDeleteTodo)
+            todo.removeEventListener('click', onEditTodo)
+        })
+    }
+
     function onDeleteTodo (e){
         const todoId = e.currentTarget.dataset.key
         const todoItem = getStore().filter((todo) => todo.id === todoId)
+        cleanUp()
         Router('/delete', todoItem[0])
     }
 
     function onEditTodo (e){
         const todoId = e.currentTarget.dataset.key
         const todoItem = getStore().filter((todo) => todo.id === todoId)
+        cleanUp()
         Router('/edit', todoItem[0])
+    }
+
+    function onAddTodo (e){
+        cleanUp()
+        Router('/add')
     }
 
     const todoList = getStore()
@@ -29,6 +44,9 @@ const toDoPage = function(){
     const header = branding();
     page.append(header)
 
+    //create footer
+    const footer = addToDo()
+    
     //create a ul to hold the todoItems
     const ul = todolist();
 
@@ -47,8 +65,9 @@ const toDoPage = function(){
 
     render()
 
-    //footer for adding a to do
-    page.append(addToDo())
+    //append footer
+    footer.querySelector('#addTodo').addEventListener('click', onAddTodo)
+    page.append(footer)
 
     return page
 }
