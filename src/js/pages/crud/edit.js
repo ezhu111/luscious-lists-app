@@ -47,7 +47,7 @@ const editPage = function (props) {
             else if (endDate < startDate || (endDate == startDate && endTime < startTime)) {
                 alert("The end date for your todo item cannot be before your start date.")
             } else {
-                newTodo = {
+                var newTodo = {
                     "id": props.id,
                     "category": category,
                     "title": title,

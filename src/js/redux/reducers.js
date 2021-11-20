@@ -17,10 +17,6 @@ function reducer (action){
 
             const store = getStore()
             const index = action.payload.index;
-
-            console.log(newTodo);
-            console.log(index);
-
             const newStore = [...store.slice(0,index), store[index] = newTodo, ...store.slice(index+1)]
             updateStore(newStore);
             action.cb()
