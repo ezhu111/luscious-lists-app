@@ -19,7 +19,7 @@ const deletePage = function (props) {
         cleanUp()
         Router('/todos')
     }
-    else {
+    
         function onCancel(e) {
             cleanUp()
             Router('/todos')
@@ -27,7 +27,6 @@ const deletePage = function (props) {
 
         function onConfirm(e) {
             if (confirm('Are you sure you want to delete this item?')) {
-                Router('/todos')
                 const removeTodo = props
                 const index = getStore().findIndex(todo => todo.id === removeTodo.id)
                 const action = {
@@ -76,7 +75,7 @@ const deletePage = function (props) {
         page.append(content)
 
         return page
-    }
+    
 }
 
 export default deletePage
