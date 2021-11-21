@@ -19,7 +19,7 @@ const editPage = function (props) {
         cleanUp()
         Router('/todos')
     }
-    else {
+    
         function onCancel(e) {
             cleanUp()
             Router('/todos')
@@ -124,7 +124,7 @@ const editPage = function (props) {
         page.append(content)
 
         return page
-    }
+    
 }
 
 export default editPage
