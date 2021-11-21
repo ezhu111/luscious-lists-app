@@ -22,11 +22,7 @@
     "sass": "^1.43.2"
   },
   "dependencies": {
-    "uuid": "^3.4.0",
-    "gulp": "^4.0.2",
-    "http-server": "^13.0.2",
-    "parcel": "^2.0.0",
-    "sass": "^1.43.2"
+    "uuid": "^3.4.0"
   },
   "repository": {
     "type": "git",
