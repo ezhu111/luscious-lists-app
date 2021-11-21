@@ -8,11 +8,11 @@ import button from "../../components/ui/button"
 import reducer from "../../redux/reducers"
 
 const cancelButton = button("cancelButton", "Cancel")
-const addButton = button("addButton", "Confirm")
+const addButton = button("editButton", "Confirm")
 
 const addPage = function () {
     //generate new Id
-    newId = keyGenerator().substr(0,8);
+    const newId = keyGenerator().substr(0,8);
 
     function cleanUp (){
         cancelButton.removeEventListener('click', onCancel)  

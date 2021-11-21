@@ -1,8 +1,6 @@
 import {getStore, updateStore} from './store'
 
 function reducer (action){
-    console.log(action);
-
     switch(action.type){
         case "delete": {
             const store = getStore()

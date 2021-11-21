@@ -2,27 +2,28 @@
 
 // this is the todos page
 
-.todo-page .logo {
-    color: white;
-    font-size: 3rem;
-}
-
 .ui-page-todo{
     margin: 0 auto;
     padding: 0 1rem;
 
     //this will alternate the todo-color
-    .todoSingle:nth-child(4n+1) .todo-color{
-        background-color: rgb(253, 174, 70);
+    .todoSingle:nth-child(6n+1) .todo-color{
+        background-color: #FF5347;
     }
-    .todoSingle:nth-child(4n+2) .todo-color{
-        background-color: rgb(145, 223, 56);
+    .todoSingle:nth-child(6n+2) .todo-color{
+        background-color: #FF9D4F;
     }
-    .todoSingle:nth-child(4n+3) .todo-color{
-        background-color: rgb(224, 92, 169);
+    .todoSingle:nth-child(6n+3) .todo-color{
+        background-color: #F5F263;
     }
-    .todoSingle:nth-child(4n+4) .todo-color{
-        background-color: rgb(90, 82, 197);
+    .todoSingle:nth-child(6n+4) .todo-color{
+        background-color: #81D152;
+    }
+    .todoSingle:nth-child(6n+5) .todo-color{
+        background-color: #42ADC7;
+    }
+    .todoSingle:nth-child(6n+6) .todo-color{
+        background-color: #5B4DB7;
     }
 
 }

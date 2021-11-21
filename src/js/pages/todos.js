@@ -54,6 +54,11 @@ const toDoPage = function(){
         if(todoList !== null){
             const elements = todoList.map(todo => todoItem(todo))
             elements.forEach(element=> {
+                // if the todo item is completed, then give it a unique class to change the text color
+                if (element.children[1].children[3].value.slice(11) === "true") {
+                    element.children[1].children[3].classList.add("complete")
+                }
+
                 element.querySelector('#editTodo').addEventListener('click', onEditTodo)
                 element.querySelector('#deleteTodo').addEventListener('click', onDeleteTodo)
                 ul.append(element)

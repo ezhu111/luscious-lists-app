@@ -63,6 +63,11 @@ const deletePage = function (props) {
         `
 
         const content = makeElement(template)
+        
+        // if the todo item is completed, then give it a unique class to change the text color
+        if (content.children[1].children[0].children[3].value.slice(11) === "true") {
+            content.children[1].children[0].children[3].classList.add("complete")
+        }
         cancelButton.addEventListener('click', onCancel)
         deleteButton.addEventListener('click', onConfirm)
         const buttonDiv = document.createElement('div')
