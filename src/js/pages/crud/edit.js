@@ -29,7 +29,7 @@ const editPage = function (props) {
             const index = getStore().findIndex(todo => todo.id === props.id)
 
             // this grabs the new values entered
-            var category = document.getElementById('category').value;
+            var category = document.querySelector('#category').value;
             var title = document.getElementById('title').value;
             var isComplete = document.getElementById('isComplete').checked;
             var startDate = document.getElementById('startDate').value;
